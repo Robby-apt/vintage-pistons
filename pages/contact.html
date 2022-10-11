@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" >
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<!-- Style sheet -->
+		<link rel="stylesheet" href="../styles/style.css" >
+		<title>Contact</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="../index.html" class="brand">Vintage Pistons</a>
+
+				<ul class="navLinks">
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="./about_us.html">About</a></li>
+					<!-- Dropdown menu with contact and q&a page -->
+					<li class="dropdown">
+						<a href="#" class="dropbtn active">Queries &#8595;</a>
+						<div class="dropdown-content">
+							<a href="../pages/contact.html">Contact</a>
+							<hr >
+							<a href="../pages/q_and_a.html">Q & A</a>
+						</div>
+					</li>
+					<!--  -->
+					<li><a href="./drivers.html">Drivers</a></li>
+					<li>
+						<a href="./register.html" class="callToAction"
+							>Register</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<h1 class="contactHeading">Feel free to contact us</h1>
+
+		<div class="contactSection">
+			<div class="socialMediaLinks">
+				<div class="innerDiv">
+					<p>
+						You can reach us on our various social media platforms
+					</p>
+
+					<div class="mediaLinks">
+						<a href="#" target="_blank">
+							<img
+								src="../media/icons/iconmonstr-facebook-1.svg"
+								alt="Facebook link"
+							>
+						</a>
+						<a href="#" target="_blank">
+							<img
+								src="../media/icons/iconmonstr-instagram-11.svg"
+								alt="Instagram link"
+							>
+						</a>
+						<a href="#" target="_blank">
+							<img
+								src="../media/icons/iconmonstr-whatsapp-1.svg"
+								alt="Whatsapp link"
+							>
+						</a>
+					</div>
+
+					<p>You can also reach us via email or phone</p>
+					<p class="phoneAndEmail">
+						Phone: +254 7XX XXX XXX
+						<br >
+						<br >
+						Email: vintagepistons@gmail.com
+					</p>
+
+					<p class="contactConclusion">We are happy to help</p>
+				</div>
+			</div>
+
+			<div class="form">
+				<form
+					action="mailto:vintagepistons@gmail.com"
+					method="post"
+					enctype="text/plain"
+					name="ContactForm"
+				>
+					<div class="nameInput">
+						<div class="firstName">
+							<label for="fName">First Name:</label>
+							<input
+								type="text"
+								name="fName"
+								id="fName"
+								placeholder="First Name"
+								aria-label="First name input"
+							>
+						</div>
+
+						<div class="lastName">
+							<label for="lName">Last Name:</label>
+							<input
+								type="text"
+								name="lName"
+								id="lName"
+								placeholder="Last Name"
+								aria-label="Last name input"
+							>
+						</div>
+					</div>
+
+					<div class="countryInput">
+						<label for="country">Country:</label>
+						<select
+							name="country"
+							id="country"
+							aria-label="Country input"
+						>
+							<option value="Kenya">Kenya</option>
+							<option value="Tanzania">Tanzania</option>
+							<option value="Burundi">Burundi</option>
+							<option value="Rwanda">Rwanda</option>
+							<option value="Uganda">Uganda</option>
+						</select>
+					</div>
+
+					<div class="messageInput">
+						<label for="message">Message:</label>
+						<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="10"
+							aria-label="Message input"
+						></textarea>
+					</div>
+
+					<button type="submit">SEND</button>
+				</form>
+			</div>
+		</div>
+
+		<footer>
+			<div class="socials">
+				<a href="#" target="_blank">
+					<img
+						src="../media/icons/iconmonstr-facebook-1.svg"
+						alt="Facebook link"
+					>
+				</a>
+
+				<a href="#" target="_blank">
+					<img
+						src="../media/icons/iconmonstr-instagram-11.svg"
+						alt="Instagram link"
+					>
+				</a>
+
+				<a href="#" target="_blank">
+					<img
+						src="../media/icons/iconmonstr-whatsapp-1.svg"
+						alt="Whatsapp link"
+					>
+				</a>
+			</div>
+
+			<div class="rights">
+				<p>Designed by Robin © 2022 - All rights reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>
