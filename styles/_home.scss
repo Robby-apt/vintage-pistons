@@ -1,0 +1,149 @@
+.homeIntro {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.25rem;
+	padding: 0 2.5rem;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+p {
+	margin: 0;
+}
+
+.dates {
+	text-align: center;
+	width: max-content;
+}
+
+.ticketBtn {
+	background: none;
+	border: 0.125rem solid #000;
+	border-radius: 1.25rem;
+	font-weight: bold;
+	margin: 0 auto 0 0;
+	padding: 0.3125rem 0.625rem;
+
+	&:hover {
+		background-color: #000;
+		color: #fff;
+	}
+}
+
+/* Map section styling */
+.map {
+	display: flex;
+
+	img {
+		height: 25rem;
+		margin-right: 1.25rem;
+	}
+}
+
+.mapKey {
+	h2 {
+		margin: 0;
+	}
+}
+
+/* Slideshow section styling */
+.slideSection {
+	background-color: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	margin: 1.25rem 0;
+	overflow: hidden;
+	padding: 0 2.5rem;
+	width: calc(100% - 5rem);
+	height: 80vh;
+	min-height: 650px;
+
+	h2 {
+		margin: 1.25rem auto 0;
+	}
+}
+
+.slideWrap {
+	align-items: flex-start;
+	display: flex;
+	margin: 1.25rem auto 0;
+	overflow: hidden;
+	position: relative;
+	width: 85%;
+	height: 100%;
+}
+
+.slideItem {
+	display: inline-block;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+
+	img {
+		margin: 0;
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		height: 50rem;
+
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		opacity: 0;
+		transform: scale(1.5) rotate(15deg);
+		-webkit-animation: slowFade 32s infinite;
+		animation: slowFade 32s infinite;
+	}
+}
+
+.slideWrap {
+	.slideItem {
+		&:nth-child(4) img {
+			-webkit-animation-delay: 0s;
+			animation-delay: 0s;
+		}
+
+		&:nth-child(3) img {
+			-webkit-animation-delay: 10s;
+			animation-delay: 10s;
+		}
+
+		&:nth-child(2) img {
+			-webkit-animation-delay: 20s;
+			animation-delay: 20s;
+		}
+
+		&:nth-child(1) img {
+			-webkit-animation-delay: 30s;
+			animation-delay: 30s;
+		}
+	}
+}
+
+/*  */
+@keyframes slowFade {
+	25% {
+		opacity: 1;
+		transform: scale(1) rotate(0);
+	}
+	40% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes slowFade {
+	25% {
+		opacity: 1;
+		transform: scale(1) rotate(0);
+	}
+	40% {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,36 @@
+.driversHead {
+	margin: 1.25rem auto;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	background-color: #f1f1f1;
+	padding: 2.5rem;
+}
+
+.grid-item {
+	position: relative;
+	padding: 0.625rem;
+	text-align: center;
+
+	img {
+		border-radius: 1.25rem;
+		object-fit: cover;
+		object-position: center;
+		width: 20rem;
+		height: 20rem;
+	}
+
+	p {
+		background-color: #000;
+		border-radius: 1.25rem 1.25rem 0 0;
+		color: #fff;
+		padding: 0.3125rem 0;
+		position: absolute;
+		width: 50%;
+		bottom: 4%;
+		left: 50%;
+		translate: -50% 0;
+	}
+}

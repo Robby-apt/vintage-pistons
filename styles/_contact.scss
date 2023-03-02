@@ -1,0 +1,106 @@
+.contactHeading {
+	margin: 1.25rem auto 0;
+	text-align: center;
+}
+
+.contactSection {
+	background-color: #f1f1f1;
+	border-radius: 1.25rem;
+	display: flex;
+	filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
+	margin: auto;
+	width: 70vw;
+	min-width: 390px;
+	min-height: 60vh;
+}
+
+.socialMediaLinks {
+	background-color: #000;
+	border-radius: 1.25rem 0 0 1.25rem;
+	display: flex;
+	width: 40%;
+	min-height: 150px;
+
+	.innerDiv {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+
+		p {
+			color: #fff;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.mediaLinks {
+			display: flex;
+			justify-content: space-between;
+			margin: 1.25rem auto;
+			width: 50%;
+		}
+	}
+}
+
+.phoneAndEmail {
+	margin: 1.25rem auto;
+}
+
+.contactConclusion {
+	font-weight: bold;
+}
+
+/* contact form and registration form styling */
+.form {
+	display: flex;
+	padding: 1.25rem;
+	width: 60%;
+
+	form {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		width: 60%;
+
+		input,
+		select {
+			background: none;
+			border-top: none;
+			border-right: none;
+			border-bottom: 0.125rem solid #000;
+			border-left: none;
+		}
+
+		button {
+			background: none;
+			border: 0.125rem solid #000;
+			border-radius: 0.625rem;
+			margin: 0 auto;
+			padding: 0.3125rem 0.625rem;
+		}
+	}
+}
+
+.nameInput,
+.contactInput,
+.countryInput,
+.ticketInput,
+.messageInput {
+	display: flex;
+	margin-bottom: 1.25rem;
+}
+
+.nameInput,
+.ticketInput,
+.contactInput {
+	justify-content: space-between;
+
+	div {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.countryInput,
+.messageInput {
+	flex-direction: column;
+}

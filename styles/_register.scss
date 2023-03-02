@@ -1,0 +1,47 @@
+.registerHead,
+.registerSubHead {
+	margin: 1.25rem auto;
+}
+
+/* schedule section styling */
+#schedule {
+	display: flex;
+	margin-bottom: 1.25rem;
+	padding: 0 2.5rem;
+}
+
+table {
+	border: 0.125rem solid #000;
+	border-radius: 0.625rem;
+	width: 100%;
+}
+
+thead {
+	tr {
+		th {
+			border-bottom: 0.125rem solid #000;
+
+			&:nth-child(even) {
+				border-left: 0.125rem solid #000;
+				border-right: 0.125rem solid #000;
+			}
+		}
+	}
+}
+
+tbody {
+	tr {
+		td {
+			padding: 0.625rem;
+
+			&:nth-child(even) {
+				border-left: 0.125rem solid #000;
+				border-right: 0.125rem solid #000;
+			}
+
+			.cellTitle {
+				margin: 0 auto;
+			}
+		}
+	}
+}
